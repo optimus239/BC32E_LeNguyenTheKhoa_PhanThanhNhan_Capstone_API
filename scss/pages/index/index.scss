@@ -1,2 +1,112 @@
 @import "../../base/components/base";
 @import "../../themes/variable";
+
+.header {
+  position: relative;
+  @include wh(1280px, 50px);
+  background: $bg-dark;
+  border: $bd-s1-dark;
+  .container {
+    .header-all {
+      .header-logo {
+        position: absolute;
+        @include wh(116px, 32px);
+        left: 24px;
+        top: 10px;
+        background-image: url(../../../img/image\ 3.png);
+      }
+      .header-cart {
+        position: absolute;
+        @include wh(66px, 36px);
+        left: 1027px;
+        top: 6px;
+        .cart-img {
+          position: absolute;
+          left: 0%;
+          right: 53.03%;
+          top: 8.33%;
+          bottom: 5.56%;
+          background-image: url(../../../img/image\ 8.png);
+        }
+        .cart-num {
+          position: absolute;
+          left: 46.97%;
+          right: 0%;
+          top: 0%;
+          bottom: 0%;
+          @include text($text-xl, $text-light, $text-c1-light, $lh-l);
+        }
+      }
+      .header-login {
+        position: absolute;
+        @include wh(91px, 32px);
+        left: 1103px;
+        top: 15px;
+        @include text($text-base, $text-light, $text-c2-light, $lh-base);
+        border: $bd-s1-dark;
+        text-shadow: $text-sd;
+      }
+      .header-register {
+        position: absolute;
+        @include wh(90px, 32px);
+        left: 1170px;
+        top: 15px;
+        @include text($text-base, $text-light, $text-c2-light, $lh-base);
+        border: $bd-s1-dark;
+        text-shadow: $text-sd;
+      }
+    }
+  }
+}
+.menu {
+  position: relative;
+  @include wh(1280px, 50px);
+  background: $bg-light;
+  ul {
+    list-style: none;
+    li {
+      &:nth-child(1) {
+        position: absolute;
+        @include wh(56px, 24px);
+        left: 25px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-regular, $text-c1-dark, $lh-l);
+      }
+      &:nth-child(2) {
+        position: absolute;
+        @include wh(41px, 24px);
+        left: 105px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+        opacity: 0.7;
+      }
+      &:nth-child(3) {
+        position: absolute;
+        @include wh(70px, 24px);
+        left: 183px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+        opacity: 0.7;
+      }
+      &:nth-child(4) {
+        position: absolute;
+        @include wh(31px, 24px);
+        left: 292px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+      }
+      &:nth-child(5) {
+        position: absolute;
+        @include wh(52px, 24px);
+        left: 363px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+      }
+    }
+  }
+}

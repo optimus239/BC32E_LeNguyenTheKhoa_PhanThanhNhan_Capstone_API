@@ -1,0 +1,42 @@
+//background
+$bg-dark: #000000;
+$bg-light: #ffffff;
+
+//fontsize
+$text-base: 16px;
+$text-l: 20px;
+$text-xl: 30px;
+
+//fontweight
+$text-light: 300;
+$text-regular: 400;
+
+//color
+$text-c1-light: #ffffff;
+$text-c2-light: #f7f7f7;
+$text-c1-dark: #000000;
+
+//fontstyle
+$text-style-base: normal;
+
+//lineheight
+$lh-base: 19px;
+$lh-l: 24px;
+
+//border
+$bd-s1-dark: 1px solid #000000;
+
+//textshadow
+$text-sd: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+@mixin text($fs, $fw, $c, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $c;
+  line-height: $lh;
+}
+
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+}
