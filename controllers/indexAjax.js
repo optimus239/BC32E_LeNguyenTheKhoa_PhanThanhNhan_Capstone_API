@@ -1,28 +1,25 @@
-function getListProductApi() {
-  var promise = axios({
+const getListProductApi = () => {
+  const promise = axios({
     url: "https://shop.cyberlearn.vn/api/Product",
     method: "GET",
     ResponsiveType: "JSON",
   });
-  promise.then(function (result) {
+  promise.then((result) => {
     // console.log(result.data.content);
     renderProduct(result.data.content);
   });
-  promise.catch(function (err) {
+  promise.catch((err) => {
     console.log(err);
   });
-}
+};
 
 window.onload = () => {
   getListProductApi();
 };
 
-function renderProduct(arrProduct) {
-  var html = "";
-  for (var i = 0; i < arrProduct.length; i++) {
-    var product = arrProduct[i];
-    console.log(product.price);
-    html += `
+const renderProduct = (arrProduct) => {
+  const content = arrProduct.reduce((value, product) => {
+    return (value += `
     <div class="col-4">
      <div class="card-item">
       <div class="card-top">
@@ -40,11 +37,8 @@ function renderProduct(arrProduct) {
       </div>
      </div>
     </div>
-       `;
-    var date = product.price;
-
-    console.log("span", date);
-  }
-  document.querySelector("#product").innerHTML = html;
+       `);
+  }, "");
+  document.querySelector("#product").innerHTML = content;
   document.querySelector("span.price").innerHTML = price;
-}
+};
