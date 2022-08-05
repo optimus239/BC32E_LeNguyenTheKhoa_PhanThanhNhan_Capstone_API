@@ -40,5 +40,4 @@ const renderProduct = (arrProduct) => {
        `);
   }, "");
   document.querySelector("#product").innerHTML = content;
-  document.querySelector("span.price").innerHTML = price;
 };
