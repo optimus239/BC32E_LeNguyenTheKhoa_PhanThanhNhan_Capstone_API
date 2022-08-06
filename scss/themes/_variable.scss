@@ -6,6 +6,14 @@ $bg-btn: #f8b653;
 $bg-orange: #e1b067;
 $bg-gray: #f8f8f8;
 $bg-2-gray: #dedddc;
+$bg-3-gray: #cccccc;
+
+//backgorund-linear
+$bg-1-linear: linear-gradient(
+  270deg,
+  rgba(62, 32, 248, 0.9) 5.14%,
+  #d017ee 89.71%
+);
 
 //fontsize
 $text-base: 16px;
@@ -18,13 +26,20 @@ $text-xxl: 40px;
 $text-exlight: 200;
 $text-light: 300;
 $text-regular: 400;
+$text-medium: 500;
 $text-semibold: 600;
 
 //color
 $text-c1-light: #ffffff;
 $text-c2-light: #f7f7f7;
+$text-c3-light: #fffcfc;
+$text-c4-light: #fff8f8;
 $text-c1-dark: #000000;
+$text-c2-dark: #140101;
+$text-c3-dark: #1e1d1d;
 $text-c1-gray: #cbc9c9;
+$text-c1-green: #1ed90e;
+$text-c1-orange: #fc0303;
 
 //fontstyle
 $text-style-base: normal;
@@ -33,6 +48,7 @@ $text-style-base: normal;
 $lh-base: 19px;
 $lh-l: 24px;
 $lh-l-btn: 29px;
+$lh-xl: 36px;
 $lh-xxl: 48px;
 
 //border
