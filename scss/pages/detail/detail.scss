@@ -1,2 +1,372 @@
 @import "../../base/components/base";
 @import "../../themes/variable";
+
+.header {
+  position: relative;
+  @include wh(1280px, 50px);
+  background: $bg-dark;
+  border: $bd-s1-dark;
+  .container {
+    .header-all {
+      .header-logo {
+        position: absolute;
+        @include wh(116px, 32px);
+        left: 24px;
+        top: 10px;
+        background-image: url(../../../img/image\ 3.png);
+      }
+      .header-cart {
+        position: absolute;
+        @include wh(66px, 36px);
+        left: 1027px;
+        top: 6px;
+        .cart-img {
+          position: absolute;
+          left: 0%;
+          right: 53.03%;
+          top: 8.33%;
+          bottom: 5.56%;
+          background-image: url(../../../img/image\ 8.png);
+        }
+        .cart-num {
+          position: absolute;
+          left: 46.97%;
+          right: 0%;
+          top: 0%;
+          bottom: 0%;
+          @include text($text-xl, $text-light, $text-c1-light, $lh-l);
+        }
+      }
+      .header-login {
+        position: absolute;
+        @include wh(91px, 32px);
+        left: 1103px;
+        top: 15px;
+        @include text($text-base, $text-light, $text-c2-light, $lh-base);
+        border: $bd-s1-dark;
+        text-shadow: $text-sd;
+      }
+      .header-register {
+        position: absolute;
+        @include wh(90px, 32px);
+        left: 1170px;
+        top: 15px;
+        @include text($text-base, $text-light, $text-c2-light, $lh-base);
+        border: $bd-s1-dark;
+        text-shadow: $text-sd;
+      }
+    }
+  }
+}
+.menu {
+  position: relative;
+  @include wh(1280px, 50px);
+  background: $bg-light;
+  // top: 50px;
+  ul {
+    list-style: none;
+    .active {
+      position: absolute;
+      @include wh(56px, 24px);
+      left: 25px;
+      top: 16px;
+      font-style: normal;
+      @include text($text-l, $text-regular, $text-c1-dark, $lh-l);
+    }
+    li {
+      &:nth-child(2) {
+        position: absolute;
+        @include wh(41px, 24px);
+        left: 105px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+        opacity: 0.7;
+      }
+      &:nth-child(3) {
+        position: absolute;
+        @include wh(70px, 24px);
+        left: 183px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+        opacity: 0.7;
+      }
+      &:nth-child(4) {
+        position: absolute;
+        @include wh(31px, 24px);
+        left: 292px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+      }
+      &:nth-child(5) {
+        position: absolute;
+        @include wh(52px, 24px);
+        left: 363px;
+        top: 16px;
+        font-style: normal;
+        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+      }
+    }
+  }
+  .line {
+    position: absolute;
+    width: 60px;
+    height: 0px;
+    left: 24px;
+    top: 50px;
+    background: #030303;
+    border: 1px solid #000000;
+    z-index: 1;
+  }
+}
+.detail {
+  position: relative;
+  @include wh(1280px, 530px);
+  background: $text-c1-light;
+  .container {
+    .detail-item {
+      .detail-right {
+        position: absolute;
+        @include wh(334px, 355px);
+        left: 65px;
+        top: 58px;
+        background: $bg-gray;
+        img {
+          position: absolute;
+          @include wh(220px, 220px);
+          left: 57px;
+          top: 109px;
+        }
+      }
+      .detail-left {
+        .detail-name {
+          position: absolute;
+          @include wh(410px, 36px);
+          left: 527px;
+          top: 67px;
+          font-style: $text-style-base;
+          @include text($text-xl, $text-light, $text-c1-dark, $lh-xl);
+        }
+        .detail-content {
+          position: absolute;
+          @include wh(503px, 90px);
+          left: 527px;
+          top: 112px;
+          font-style: $text-style-base;
+          @include text($text-base, $text-regular, $text-c2-dark, $lh-base);
+        }
+        .detail-available {
+          position: absolute;
+          @include wh(162px, 58px);
+          left: 527px;
+          top: 202px;
+          font-style: $text-style-base;
+          @include text($text-l-btn, $text-medium, $text-c1-green, $lh-l-btn);
+        }
+        .detail-size {
+          position: absolute;
+          @include wh(500px, 50px);
+          top: 249px;
+          left: 525px;
+          .bg-size {
+            position: absolute;
+            @include wh(50px, 50px);
+            background: $bg-3-gray;
+            .item-size {
+              position: absolute;
+              @include wh(32px, 29px);
+              left: 20%;
+              right: 16%;
+              top: 22%;
+              bottom: 20%;
+              font-style: $text-style-base;
+              @include text(
+                $text-l-btn,
+                $text-semibold,
+                $text-c3-dark,
+                $lh-l-btn
+              );
+            }
+          }
+          @for $i from 0 to 8 {
+            .bg-item-#{$i} {
+              left: 14% * ($i);
+            }
+          }
+        }
+        .detail-price {
+          position: absolute;
+          @include wh(113px, 47px);
+          left: 527px;
+          top: 317px;
+          font-style: $text-style-base;
+          @include text($text-xl, $text-semibold, $text-c1-orange, $lh-xl);
+        }
+        .detail-num {
+          .num {
+            position: absolute;
+            @include wh(14px, 36px);
+            left: 597px;
+            top: 377px;
+            font-style: $text-style-base;
+            @include text($text-xl, $text-regular, $text-c1-dark, $lh-xl);
+          }
+          .detail-plus {
+            img {
+              position: absolute;
+              top: 370px;
+              left: 527px;
+            }
+            span {
+              position: absolute;
+              left: 542px;
+              right: 34%;
+              top: 375px;
+              bottom: 24%;
+              font-style: $text-style-base;
+              @include text($text-xl, $text-regular, $text-c3-light, $lh-xl);
+            }
+          }
+          .detail-minus {
+            img {
+              position: absolute;
+              top: 370px;
+              left: 636px;
+            }
+            span {
+              position: absolute;
+              left: 51%;
+              right: 34%;
+              top: 71%;
+              bottom: 24%;
+              font-style: $text-style-base;
+              @include text($text-xl, $text-regular, $text-c3-light, $lh-xl);
+            }
+          }
+        }
+        .detail-cart {
+          position: absolute;
+          @include wh(175px, 64px);
+          left: 527px;
+          top: 427px;
+          border: none;
+          background: $bg-1-linear;
+        }
+        span {
+          position: absolute;
+          @include wh(142px, 62px);
+          left: 551px;
+          top: 445px;
+          font-style: $text-style-base;
+          @include text($text-l-btn, $text-medium, $text-c4-light, $lh-l-btn);
+        }
+      }
+    }
+  }
+}
+.related-feature {
+  position: relative;
+  @include wh(1280px, 1044px);
+  background: $bg-2-light;
+  h1 {
+    position: absolute;
+    @include wh(351px, 48px);
+    left: 476px;
+    top: 16px;
+    font-style: $text-style-base;
+    @include text($text-xxl, $text-regular, $text-c1-dark, $lh-xxl);
+  }
+  .row {
+    position: relative;
+    top: 153px;
+    margin-right: 46px;
+    margin-left: 99px;
+    .col-4 {
+      .card-item {
+        position: relative;
+        @include wh(334px, 369px);
+        top: 0%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $bg-gray;
+        margin-bottom: 49px;
+        .card-top {
+          img {
+            position: absolute;
+            @include wh(220px, 220px);
+            left: 57px;
+            top: 18px;
+          }
+          .name {
+            position: absolute;
+            @include wh(300px, 29px);
+            left: 23px;
+            top: 218px;
+            font-style: $text-style-base;
+            @include text($text-l-btn, $text-light, $text-c1-dark, $lh-l-btn);
+          }
+          .shortDes {
+            position: absolute;
+            @include wh(153px, 24px);
+            left: 23px;
+            top: 268px;
+            font-style: $text-style-base;
+            @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+        }
+        .card-bottom {
+          .card-btn {
+            .card-buy {
+              position: absolute;
+              @include wh(175px, 64px);
+              left: 0px;
+              top: 304px;
+              background: $bg-orange;
+              border: none;
+            }
+            .buynow {
+              position: absolute;
+              @include wh(109px, 29px);
+              left: 39px;
+              top: 323px;
+              font-style: $text-style-base;
+              @include text(
+                $text-l-btn,
+                $text-exlight,
+                $text-c1-dark,
+                $lh-l-btn
+              );
+              cursor: pointer;
+            }
+          }
+          .price-btn {
+            position: absolute;
+            @include wh(160px, 64px);
+            left: 174px;
+            top: 304px;
+            background: $bg-2-gray;
+          }
+          .price {
+            position: absolute;
+            @include wh(54px, 29px);
+            left: 240px;
+            top: 323px;
+            font-style: $text-style-base;
+            @include text(
+              $text-l-btn,
+              $text-semibold,
+              $text-c1-dark,
+              $lh-l-btn
+            );
+          }
+        }
+      }
+    }
+  }
+}
