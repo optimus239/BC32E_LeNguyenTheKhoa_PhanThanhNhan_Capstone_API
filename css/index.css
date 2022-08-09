@@ -12,104 +12,101 @@ body {
 .container {
   max-width: 1280px;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
 }
 
-.header {
+.txt, .header .container .header-content .header-register, .header .container .header-content .header-login {
+  font-size: 16px;
+  font-weight: 300;
+  color: #f7f7f7;
+  line-height: 19px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header .container {
   position: relative;
-  width: 1280px;
+  margin: 0;
   height: 50px;
   background: #000000;
   border: 1px solid #000000;
 }
-.header .container .header-all .header-logo {
+.header .container .header-logo {
   position: absolute;
-  width: 116px;
-  height: 32px;
   left: 24px;
   top: 10px;
-  background-image: url(../../../img/image\ 3.png);
+  width: 116px;
+  height: 32px;
 }
-.header .container .header-all .header-cart {
+.header .container .header-content img {
   position: absolute;
-  width: 66px;
-  height: 36px;
-  left: 1027px;
-  top: 6px;
+  width: 31px;
+  height: 31px;
+  right: 222px;
+  top: 9px;
+  bottom: 10px;
 }
-.header .container .header-all .header-cart .cart-img {
+.header .container .header-content .hcart-num {
   position: absolute;
-  left: 0%;
-  right: 53.03%;
-  top: 8.33%;
-  bottom: 5.56%;
-  background-image: url(../../../img/image\ 8.png);
-}
-.header .container .header-all .header-cart .cart-num {
-  position: absolute;
-  left: 46.97%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  font-style: normal;
   font-size: 30px;
   font-weight: 300;
   color: #ffffff;
-  line-height: 24px;
+  line-height: 36px;
+  right: 187px;
+  top: 6px;
+  bottom: 8px;
 }
-.header .container .header-all .header-login {
+.header .container .header-content .header-login {
   position: absolute;
   width: 91px;
   height: 32px;
-  left: 1103px;
   top: 15px;
-  font-size: 16px;
-  font-weight: 300;
-  color: #f7f7f7;
-  line-height: 19px;
-  border: 1px solid #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  right: 86px;
+  font-style: normal;
 }
-.header .container .header-all .header-register {
+.header .container .header-content .header-register {
   position: absolute;
   width: 90px;
   height: 32px;
-  left: 1170px;
   top: 15px;
-  font-size: 16px;
-  font-weight: 300;
-  color: #f7f7f7;
-  line-height: 19px;
-  border: 1px solid #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  right: 20px;
+  font-style: normal;
 }
 
-.menu {
+.menu .container {
   position: relative;
-  width: 1280px;
   height: 50px;
   background: #ffffff;
 }
-.menu ul {
+.menu .container ul {
   list-style: none;
 }
-.menu ul .active {
+.menu .container ul .active {
   position: absolute;
   width: 56px;
   height: 24px;
   left: 25px;
   top: 16px;
+}
+.menu .container ul .active a {
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
   color: #000000;
   line-height: 24px;
 }
-.menu ul li:nth-child(2) {
+.menu .container ul .active a:hover {
+  text-decoration: none;
+}
+.menu .container ul li:nth-child(2) {
   position: absolute;
   width: 41px;
   height: 24px;
   left: 105px;
   top: 16px;
+}
+.menu .container ul li:nth-child(2) a {
   font-style: normal;
   font-size: 20px;
   font-weight: 300;
@@ -117,12 +114,17 @@ body {
   line-height: 24px;
   opacity: 0.7;
 }
-.menu ul li:nth-child(3) {
+.menu .container ul li:nth-child(2) a:hover {
+  text-decoration: none;
+}
+.menu .container ul li:nth-child(3) {
   position: absolute;
   width: 70px;
   height: 24px;
   left: 183px;
   top: 16px;
+}
+.menu .container ul li:nth-child(3) a {
   font-style: normal;
   font-size: 20px;
   font-weight: 300;
@@ -130,31 +132,44 @@ body {
   line-height: 24px;
   opacity: 0.7;
 }
-.menu ul li:nth-child(4) {
+.menu .container ul li:nth-child(3) a:hover {
+  text-decoration: none;
+}
+.menu .container ul li:nth-child(4) {
   position: absolute;
   width: 31px;
   height: 24px;
   left: 292px;
   top: 16px;
+}
+.menu .container ul li:nth-child(4) a {
   font-style: normal;
   font-size: 20px;
   font-weight: 300;
   color: #000000;
   line-height: 24px;
 }
-.menu ul li:nth-child(5) {
+.menu .container ul li:nth-child(4) a:hover {
+  text-decoration: none;
+}
+.menu .container ul li:nth-child(5) {
   position: absolute;
   width: 52px;
   height: 24px;
   left: 363px;
   top: 16px;
+}
+.menu .container ul li:nth-child(5) a {
   font-style: normal;
   font-size: 20px;
   font-weight: 300;
   color: #000000;
   line-height: 24px;
 }
-.menu .line {
+.menu .container ul li:nth-child(5) a:hover {
+  text-decoration: none;
+}
+.menu .container .line {
   position: absolute;
   width: 60px;
   height: 0px;
@@ -165,18 +180,24 @@ body {
   z-index: 1;
 }
 
-.carousel {
+.carousel .container {
   position: relative;
-  width: 1280px;
   height: 530px;
   background: #ffffff;
   overflow: hidden;
+}
+.carousel .container .carousel-left img {
+  position: absolute;
+  width: 821px;
+  height: 392px;
+  left: 86px;
+  top: 5px;
 }
 .carousel .container .carousel-right .product-name {
   position: absolute;
   width: 291px;
   height: 51px;
-  left: 930px;
+  right: 59px;
   top: 124px;
   font-style: normal;
   font-size: 40px;
@@ -188,7 +209,7 @@ body {
   position: absolute;
   width: 291px;
   height: 51px;
-  left: 930px;
+  right: 59px;
   top: 175px;
   font-style: normal;
   font-size: 20px;
@@ -200,42 +221,17 @@ body {
   position: absolute;
   width: 150px;
   height: 50px;
-  left: 930px;
+  right: 200px;
   top: 225px;
+  padding: 13px 35px 13px 34px;
   background: #f8b653;
 }
-.carousel .container .carousel-right .buynow {
-  position: absolute;
-  width: 81px;
-  height: 24px;
-  left: 964px;
-  top: 238px;
-}
-.carousel .container .carousel-right .buynow span {
+.carousel .container .carousel-right .carousel-button span {
   font-style: normal;
   font-size: 20px;
   font-weight: 300;
   color: #ffffff;
   line-height: 24px;
-}
-.carousel .container .carousel-left .carousel-img {
-  position: absolute;
-  width: 821px;
-  height: 392px;
-  left: 86px;
-  top: 5px;
-  background-image: url(../../../img/image\ 4.png);
-}
-.carousel .container .carousel-bg {
-  position: absolute;
-  width: 1334px;
-  height: 393px;
-  left: -36px;
-  top: 107px;
-  background: url(../../../img/image\ 6.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .carousel .container .polygon .polygon-left {
   position: absolute;
@@ -248,7 +244,7 @@ body {
   position: absolute;
   width: 45.71px;
   height: 66.13px;
-  left: 1237.44px;
+  right: 12.86px;
   top: 175px;
   z-index: 2;
 }
@@ -259,12 +255,24 @@ body {
   left: 597px;
   top: 397px;
 }
+@media only screen and (max-width: 1199.98px) {
+  .carousel .container .ellipse img:nth-child(1) {
+    left: 46% !important;
+    transform: translateX(-50%);
+  }
+}
 .carousel .container .ellipse img:nth-child(2) {
   position: absolute;
   width: 15px;
   height: 15px;
   left: 635px;
   top: 397px;
+}
+@media only screen and (max-width: 1199.98px) {
+  .carousel .container .ellipse img:nth-child(2) {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
 }
 .carousel .container .ellipse img:nth-child(3) {
   position: absolute;
@@ -273,32 +281,47 @@ body {
   left: 667px;
   top: 397px;
 }
+@media only screen and (max-width: 1199.98px) {
+  .carousel .container .ellipse img:nth-child(3) {
+    left: 54% !important;
+    transform: translateX(-50%);
+  }
+}
+.carousel .container .carousel-bg {
+  position: absolute;
+  left: -17px;
+  top: 107px;
+}
 
-.product-feature {
+.product-feature .container {
   position: relative;
-  width: 1280px;
   height: 1044px;
   background: #fffcfc;
 }
-.product-feature h1 {
-  position: absolute;
-  width: 351px;
+.product-feature .container .product-head {
+  text-align: center;
+}
+.product-feature .container .product-head h1 {
   height: 48px;
-  left: 476px;
-  top: 16px;
   font-style: normal;
   font-size: 40px;
   font-weight: 400;
   color: #000000;
   line-height: 48px;
 }
-.product-feature .row {
+.product-feature .container .row {
   position: relative;
-  top: 153px;
-  margin-right: 46px;
-  margin-left: 99px;
+  top: 89px;
+  margin-right: 16px;
+  margin-left: 69px;
 }
-.product-feature .row .col-4 .card-item {
+@media only screen and (max-width: 991.98px) {
+  .product-feature .container .row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.product-feature .container .row .itemList .card-item {
   position: relative;
   width: 334px;
   height: 369px;
@@ -308,15 +331,22 @@ body {
   bottom: 0;
   background: #f8f8f8;
   margin-bottom: 49px;
+  margin-right: 60px;
 }
-.product-feature .row .col-4 .card-item .card-top img {
+@media only screen and (max-width: 767.98px) {
+  .product-feature .container .row .itemList .card-item {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.product-feature .container .row .itemList .card-item .card-top img {
   position: absolute;
   width: 220px;
   height: 220px;
   left: 57px;
   top: 18px;
 }
-.product-feature .row .col-4 .card-item .card-top .name {
+.product-feature .container .row .itemList .card-item .card-top .name {
   position: absolute;
   width: 300px;
   height: 29px;
@@ -328,7 +358,7 @@ body {
   color: #000000;
   line-height: 29px;
 }
-.product-feature .row .col-4 .card-item .card-top .shortDes {
+.product-feature .container .row .itemList .card-item .card-top .shortDes {
   position: absolute;
   width: 153px;
   height: 24px;
@@ -343,7 +373,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-.product-feature .row .col-4 .card-item .card-bottom .card-btn .card-buy {
+.product-feature .container .row .itemList .card-item .card-bottom .card-btn .card-buy {
   position: absolute;
   width: 175px;
   height: 64px;
@@ -351,13 +381,11 @@ body {
   top: 304px;
   background: #e1b067;
   border: none;
+  padding: 17px 27px 18px 39px;
 }
-.product-feature .row .col-4 .card-item .card-bottom .card-btn .buynow {
-  position: absolute;
+.product-feature .container .row .itemList .card-item .card-bottom .card-btn .card-buy .buynow {
   width: 109px;
   height: 29px;
-  left: 39px;
-  top: 323px;
   font-style: normal;
   font-size: 24px;
   font-weight: 200;
@@ -365,20 +393,18 @@ body {
   line-height: 29px;
   cursor: pointer;
 }
-.product-feature .row .col-4 .card-item .card-bottom .price-btn {
+.product-feature .container .row .itemList .card-item .card-bottom .price-btn {
   position: absolute;
   width: 160px;
   height: 64px;
   left: 174px;
   top: 304px;
   background: #dedddc;
+  padding: 17px 40px 18px 66px;
 }
-.product-feature .row .col-4 .card-item .card-bottom .price {
-  position: absolute;
+.product-feature .container .row .itemList .card-item .card-bottom .price-btn .price {
   width: 54px;
   height: 29px;
-  left: 240px;
-  top: 323px;
   font-style: normal;
   font-size: 24px;
   font-weight: 600;

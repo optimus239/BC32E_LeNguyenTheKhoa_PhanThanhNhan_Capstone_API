@@ -1,0 +1,6 @@
+@import "../../themes/variable";
+.txt {
+  @include text($text-base, $text-light, $text-c2-light, $lh-base);
+  border: $bd-s1-dark;
+  text-shadow: $text-sd;
+}
