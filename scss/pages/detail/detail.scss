@@ -152,6 +152,10 @@
     position: relative;
     height: 530px;
     background: $text-c1-light;
+    overflow: hidden;
+    @media only screen and (max-width: 767.98px) {
+      height: 600px;
+    }
     .detail-item {
       .detail-right {
         position: absolute;
@@ -164,6 +168,17 @@
           @include wh(220px, 220px);
           left: 57px;
           top: 109px;
+          @media only screen and (max-width: 767.98px) {
+            @include wh(300px, 300px);
+            transform: translateX(-50%);
+            left: 50%;
+            top: -17px;
+          }
+        }
+        @media only screen and (max-width: 767.98px) {
+          left: 50%;
+          transform: translateX(-50%);
+          @include wh(430px, 231px);
         }
       }
       .detail-left {
@@ -180,6 +195,15 @@
           @media only screen and (max-width: 990px) {
             left: 434px;
             width: 300px;
+          }
+          @media only screen and (max-width: 767.98px) {
+            top: 311px;
+            left: 53%;
+            transform: translateX(-50%);
+          }
+          @media only screen and (max-width: 575.98px) {
+            left: 61%;
+            top: 299px;
           }
         }
         .detail-content {
@@ -200,6 +224,17 @@
             top: 135px;
             left: 434px;
           }
+          @media only screen and (max-width: 767.98px) {
+            transform: translateX(-50%);
+            left: 50%;
+            width: 550px;
+            top: 343px;
+          }
+          @media only screen and (max-width: 575.98px) {
+            left: 50%;
+            top: 332px;
+            width: 446px;
+          }
         }
         .detail-available {
           position: absolute;
@@ -210,6 +245,7 @@
           @include text($text-l-btn, $text-medium, $text-c1-green, $lh-l-btn);
           @media only screen and (max-width: 1199.98px) {
             top: 224px;
+            width: 450px;
           }
           @media only screen and (max-width: 991.98px) {
             left: 461px;
@@ -217,6 +253,16 @@
           @media only screen and (max-width: 990px) {
             top: 290px;
             left: 434px;
+          }
+          @media only screen and (max-width: 767.98px) {
+            transform: translateX(-50%);
+            left: 70%;
+            top: 421px;
+          }
+          @media only screen and (max-width: 575.98px) {
+            transform: translateX(-50%);
+            left: 80%;
+            top: 421px;
           }
         }
         .detail-size {
@@ -227,14 +273,30 @@
           @media only screen and (max-width: 1199.98px) {
             top: 263px;
           }
+          @media only screen and (max-width: 991.98px) {
+            left: 449px;
+          }
           @media only screen and (max-width: 990px) {
             @include wh(45px, 45px);
             top: 318px;
           }
+          @media only screen and (max-width: 767.98px) {
+            transform: translateX(-50%);
+            left: 33%;
+            width: 550px;
+            top: 453px;
+          }
+          @media only screen and (max-width: 575.98px) {
+            left: 29%;
+          }
+
           .bg-size {
             position: absolute;
             @include wh(50px, 50px);
             background: $bg-3-gray;
+            @media only screen and (max-width: 767.98px) {
+              @include wh(35px, 35px);
+            }
             .item-size {
               position: absolute;
               @include wh(32px, 29px);
@@ -249,6 +311,10 @@
                 $text-c3-dark,
                 $lh-l-btn
               );
+              @media only screen and (max-width: 767.98px) {
+                left: 6%;
+                top: 15%;
+              }
             }
           }
           @for $i from 0 to 8 {
@@ -264,10 +330,18 @@
             }
           }
           @media only screen and (max-width: 991.98px) {
-            left: 449px;
             @for $i from 0 to 8 {
               .bg-item-#{$i} {
                 left: 135% * ($i);
+              }
+            }
+          }
+          @media only screen and (max-width: 767.98px) {
+            transform: translateX(-50%);
+            @include wh(35px, 35px);
+            @for $i from 0 to 8 {
+              .bg-item-#{$i} {
+                left: 135% * ($i) !important;
               }
             }
           }
@@ -276,17 +350,26 @@
               top: 56px;
               left: 0px;
             }
+            @media only screen and (max-width: 767.98px) {
+              top: 0;
+            }
           }
           .bg-item-5 {
             @media only screen and (max-width: 990px) {
               top: 56px;
               left: 61px;
             }
+            @media only screen and (max-width: 767.98px) {
+              top: 0;
+            }
           }
           .bg-item-6 {
             @media only screen and (max-width: 990px) {
               top: 56px;
               left: 122px;
+            }
+            @media only screen and (max-width: 767.98px) {
+              top: 0;
             }
           }
         }
@@ -307,6 +390,12 @@
             top: 426px;
             left: 434px;
           }
+          @media only screen and (max-width: 767.98px) {
+            // transform: translateX(-50%);
+            left: 43%;
+            width: 550px;
+            top: 490px;
+          }
         }
         .detail-num {
           .num {
@@ -323,6 +412,11 @@
               top: 426px;
               left: 559px;
             }
+            @media only screen and (max-width: 767.98px) {
+              // transform: translateX(-50%);
+              left: 47%;
+              top: 525px;
+            }
           }
           .detail-plus {
             img {
@@ -336,6 +430,12 @@
                 width: 30px;
                 top: 429px;
                 left: 523px;
+              }
+              @media only screen and (max-width: 767.98px) {
+                // transform: translateX(-50%);
+                left: 40%;
+                width: 30px;
+                top: 527px;
               }
             }
             span {
@@ -352,6 +452,12 @@
                 top: 424px;
                 left: 528px;
               }
+              @media only screen and (max-width: 767.98px) {
+                // transform: translateX(-50%);
+                left: 40%;
+                transform: translateX(18%);
+                top: 520px;
+              }
             }
           }
           .detail-minus {
@@ -366,6 +472,12 @@
                 width: 30px;
                 top: 429px;
                 left: 581px;
+              }
+              @media only screen and (max-width: 767.98px) {
+                // transform: translateX(-50%);
+                left: 52%;
+                width: 30px;
+                top: 527px;
               }
             }
             span {
@@ -382,6 +494,11 @@
               @media only screen and (max-width: 990px) {
                 top: 424px;
                 left: 588px;
+              }
+              @media only screen and (max-width: 767.98px) {
+                // transform: translateX(-50%);
+                left: 53%;
+                top: 522px;
               }
             }
           }
@@ -403,6 +520,16 @@
             padding: 0px;
             top: 462px;
             left: 434px;
+          }
+          @media only screen and (max-width: 767.98px) {
+            left: 59%;
+            top: 504px;
+          }
+          @media only screen and (max-width: 575.98px) {
+            transform: translateX(-50%);
+            left: 72%;
+            top: 522px;
+            height: 36px;
           }
           span {
             @include wh(142px, 62px);
@@ -438,6 +565,7 @@
         height: 48px;
         font-style: $text-style-base;
         @include text($text-xxl, $text-regular, $text-c1-dark, $lh-xxl);
+        margin-bottom: 0;
       }
     }
   }
