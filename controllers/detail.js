@@ -54,7 +54,7 @@ getbyID();
 const renderProduct = (arrProduct) => {
   const content = arrProduct.reduce((value, product) => {
     return (value += `
-    <div class="col-4">
+    <div class="col-sm-12 col-md-6 col-xl-4 itemList">
      <div class="card-item">
       <div class="card-top">
        <img class="img-fluid" src="${product.image}" />
@@ -63,11 +63,13 @@ const renderProduct = (arrProduct) => {
       </div>
       <div class="card-bottom">
         <a href="./detail.html?productid=${product.id}" class="card-btn">
-            <button class="card-buy"></button>
-            <span class="buynow">Buy now</span>
+            <button class="card-buy">
+              <span class="buynow">Buy now</span>
+            </button>
         </a>
-        <div class="price-btn"></div>
-        <span class="price">${product.price}$</span>
+        <div class="price-btn">
+          <span class="price">${product.price}$</span>
+        </div>
       </div>
      </div>
     </div>

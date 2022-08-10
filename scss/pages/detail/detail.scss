@@ -1,131 +1,157 @@
 @import "../../base/components/base";
+@import "../../base/components/components.scss";
 @import "../../themes/variable";
 
 .header {
-  position: relative;
-  @include wh(1280px, 50px);
-  background: $bg-dark;
-  border: $bd-s1-dark;
   .container {
-    .header-all {
-      .header-logo {
+    position: relative;
+    margin: 0;
+    height: 50px;
+    background: $bg-dark;
+    border: $bd-s1-dark;
+    .header-logo {
+      position: absolute;
+      left: 24px;
+      top: 10px;
+      @include wh(116px, 32px);
+    }
+    .header-content {
+      img {
         position: absolute;
-        @include wh(116px, 32px);
-        left: 24px;
-        top: 10px;
-        background-image: url(../../../img/image\ 3.png);
+        @include wh(31px, 31px);
+        right: 222px;
+        top: 9px;
+        bottom: 10px;
       }
-      .header-cart {
+
+      .hcart-num {
         position: absolute;
-        @include wh(66px, 36px);
-        left: 1027px;
+        font-style: $text-style-base;
+        @include text($text-xl, $text-light, $text-c1-light, $lh-xl);
+        right: 187px;
         top: 6px;
-        .cart-img {
-          position: absolute;
-          left: 0%;
-          right: 53.03%;
-          top: 8.33%;
-          bottom: 5.56%;
-          background-image: url(../../../img/image\ 8.png);
-        }
-        .cart-num {
-          position: absolute;
-          left: 46.97%;
-          right: 0%;
-          top: 0%;
-          bottom: 0%;
-          @include text($text-xl, $text-light, $text-c1-light, $lh-l);
-        }
+        bottom: 8px;
       }
       .header-login {
         position: absolute;
         @include wh(91px, 32px);
-        left: 1103px;
         top: 15px;
-        @include text($text-base, $text-light, $text-c2-light, $lh-base);
-        border: $bd-s1-dark;
-        text-shadow: $text-sd;
+        right: 86px;
+        font-style: $text-style-base;
+        @extend .txt;
+        &:hover {
+          text-decoration: none;
+        }
       }
       .header-register {
         position: absolute;
         @include wh(90px, 32px);
-        left: 1170px;
         top: 15px;
-        @include text($text-base, $text-light, $text-c2-light, $lh-base);
-        border: $bd-s1-dark;
-        text-shadow: $text-sd;
+        right: 20px;
+        font-style: $text-style-base;
+        @extend .txt;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
 }
 .menu {
-  position: relative;
-  @include wh(1280px, 50px);
-  background: $bg-light;
-  // top: 50px;
-  ul {
-    list-style: none;
-    .active {
+  .container {
+    position: relative;
+    height: 50px;
+    background: $bg-light;
+    // top: 50px;
+    ul {
+      list-style: none;
+      .active {
+        position: absolute;
+        @include wh(56px, 24px);
+        left: 25px;
+        top: 16px;
+        a {
+          font-style: normal;
+          @include text($text-l, $text-regular, $text-c1-dark, $lh-l);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      li {
+        &:nth-child(2) {
+          position: absolute;
+          @include wh(41px, 24px);
+          left: 105px;
+          top: 16px;
+          a {
+            font-style: normal;
+            @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+            opacity: 0.7;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        &:nth-child(3) {
+          position: absolute;
+          @include wh(70px, 24px);
+          left: 183px;
+          top: 16px;
+          a {
+            font-style: normal;
+            @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+            opacity: 0.7;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        &:nth-child(4) {
+          position: absolute;
+          @include wh(31px, 24px);
+          left: 292px;
+          top: 16px;
+          a {
+            font-style: normal;
+            @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        &:nth-child(5) {
+          position: absolute;
+          @include wh(52px, 24px);
+          left: 363px;
+          top: 16px;
+          a {
+            font-style: normal;
+            @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .line {
       position: absolute;
-      @include wh(56px, 24px);
-      left: 25px;
-      top: 16px;
-      font-style: normal;
-      @include text($text-l, $text-regular, $text-c1-dark, $lh-l);
+      width: 60px;
+      height: 0px;
+      left: 24px;
+      top: 50px;
+      background: #030303;
+      border: 1px solid #000000;
+      z-index: 1;
     }
-    li {
-      &:nth-child(2) {
-        position: absolute;
-        @include wh(41px, 24px);
-        left: 105px;
-        top: 16px;
-        font-style: normal;
-        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
-        opacity: 0.7;
-      }
-      &:nth-child(3) {
-        position: absolute;
-        @include wh(70px, 24px);
-        left: 183px;
-        top: 16px;
-        font-style: normal;
-        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
-        opacity: 0.7;
-      }
-      &:nth-child(4) {
-        position: absolute;
-        @include wh(31px, 24px);
-        left: 292px;
-        top: 16px;
-        font-style: normal;
-        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
-      }
-      &:nth-child(5) {
-        position: absolute;
-        @include wh(52px, 24px);
-        left: 363px;
-        top: 16px;
-        font-style: normal;
-        @include text($text-l, $text-light, $text-c1-dark, $lh-l);
-      }
-    }
-  }
-  .line {
-    position: absolute;
-    width: 60px;
-    height: 0px;
-    left: 24px;
-    top: 50px;
-    background: #030303;
-    border: 1px solid #000000;
-    z-index: 1;
   }
 }
 .detail {
-  position: relative;
-  @include wh(1280px, 530px);
-  background: $text-c1-light;
   .container {
+    position: relative;
+    height: 530px;
+    background: $text-c1-light;
     .detail-item {
       .detail-right {
         position: absolute;
@@ -148,6 +174,13 @@
           top: 67px;
           font-style: $text-style-base;
           @include text($text-xl, $text-light, $text-c1-dark, $lh-xl);
+          @media only screen and (max-width: 991.98px) {
+            left: 461px;
+          }
+          @media only screen and (max-width: 990px) {
+            left: 434px;
+            width: 300px;
+          }
         }
         .detail-content {
           position: absolute;
@@ -156,6 +189,17 @@
           top: 112px;
           font-style: $text-style-base;
           @include text($text-base, $text-regular, $text-c2-dark, $lh-base);
+          @media only screen and (max-width: 1199.98px) {
+            @include wh(400px, 90px);
+          }
+          @media only screen and (max-width: 991.98px) {
+            left: 461px;
+          }
+          @media only screen and (max-width: 990px) {
+            width: 290px;
+            top: 135px;
+            left: 434px;
+          }
         }
         .detail-available {
           position: absolute;
@@ -164,12 +208,29 @@
           top: 202px;
           font-style: $text-style-base;
           @include text($text-l-btn, $text-medium, $text-c1-green, $lh-l-btn);
+          @media only screen and (max-width: 1199.98px) {
+            top: 224px;
+          }
+          @media only screen and (max-width: 991.98px) {
+            left: 461px;
+          }
+          @media only screen and (max-width: 990px) {
+            top: 290px;
+            left: 434px;
+          }
         }
         .detail-size {
           position: absolute;
           @include wh(500px, 50px);
           top: 249px;
-          left: 525px;
+          left: 542px;
+          @media only screen and (max-width: 1199.98px) {
+            top: 263px;
+          }
+          @media only screen and (max-width: 990px) {
+            @include wh(45px, 45px);
+            top: 318px;
+          }
           .bg-size {
             position: absolute;
             @include wh(50px, 50px);
@@ -195,6 +256,39 @@
               left: 14% * ($i);
             }
           }
+          @media only screen and (max-width: 1199.98px) {
+            @for $i from 0 to 8 {
+              .bg-item-#{$i} {
+                left: 12% * ($i);
+              }
+            }
+          }
+          @media only screen and (max-width: 991.98px) {
+            left: 449px;
+            @for $i from 0 to 8 {
+              .bg-item-#{$i} {
+                left: 135% * ($i);
+              }
+            }
+          }
+          .bg-item-4 {
+            @media only screen and (max-width: 990px) {
+              top: 56px;
+              left: 0px;
+            }
+          }
+          .bg-item-5 {
+            @media only screen and (max-width: 990px) {
+              top: 56px;
+              left: 61px;
+            }
+          }
+          .bg-item-6 {
+            @media only screen and (max-width: 990px) {
+              top: 56px;
+              left: 122px;
+            }
+          }
         }
         .detail-price {
           position: absolute;
@@ -203,6 +297,16 @@
           top: 317px;
           font-style: $text-style-base;
           @include text($text-xl, $text-semibold, $text-c1-orange, $lh-xl);
+          @media only screen and (max-width: 1199.98px) {
+            top: 324px;
+          }
+          @media only screen and (max-width: 991.98px) {
+            left: 461px;
+          }
+          @media only screen and (max-width: 990px) {
+            top: 426px;
+            left: 434px;
+          }
         }
         .detail-num {
           .num {
@@ -212,21 +316,42 @@
             top: 377px;
             font-style: $text-style-base;
             @include text($text-xl, $text-regular, $text-c1-dark, $lh-xl);
+            @media only screen and (max-width: 991.98px) {
+              left: 534px;
+            }
+            @media only screen and (max-width: 990px) {
+              top: 426px;
+              left: 559px;
+            }
           }
           .detail-plus {
             img {
               position: absolute;
               top: 370px;
               left: 527px;
+              @media only screen and (max-width: 991.98px) {
+                left: 461px;
+              }
+              @media only screen and (max-width: 990px) {
+                width: 30px;
+                top: 429px;
+                left: 523px;
+              }
             }
             span {
               position: absolute;
               left: 542px;
-              right: 34%;
               top: 375px;
               bottom: 24%;
               font-style: $text-style-base;
               @include text($text-xl, $text-regular, $text-c3-light, $lh-xl);
+              @media only screen and (max-width: 991.98px) {
+                left: 477px;
+              }
+              @media only screen and (max-width: 990px) {
+                top: 424px;
+                left: 528px;
+              }
             }
           }
           .detail-minus {
@@ -234,15 +359,30 @@
               position: absolute;
               top: 370px;
               left: 636px;
+              @media only screen and (max-width: 991.98px) {
+                left: 572px;
+              }
+              @media only screen and (max-width: 990px) {
+                width: 30px;
+                top: 429px;
+                left: 581px;
+              }
             }
             span {
               position: absolute;
-              left: 51%;
+              left: 651px;
               right: 34%;
               top: 71%;
               bottom: 24%;
               font-style: $text-style-base;
               @include text($text-xl, $text-regular, $text-c3-light, $lh-xl);
+              @media only screen and (max-width: 991.98px) {
+                left: 592px;
+              }
+              @media only screen and (max-width: 990px) {
+                top: 424px;
+                left: 588px;
+              }
             }
           }
         }
@@ -253,37 +393,64 @@
           top: 427px;
           border: none;
           background: $bg-1-linear;
-        }
-        span {
-          position: absolute;
-          @include wh(142px, 62px);
-          left: 551px;
-          top: 445px;
-          font-style: $text-style-base;
-          @include text($text-l-btn, $text-medium, $text-c4-light, $lh-l-btn);
+          padding: 18px 9px 9px 18px;
+          @media only screen and (max-width: 991.98px) {
+            left: 461px;
+          }
+          @media only screen and (max-width: 990px) {
+            width: 100px;
+            height: 55px;
+            padding: 0px;
+            top: 462px;
+            left: 434px;
+          }
+          span {
+            @include wh(142px, 62px);
+            font-style: $text-style-base;
+            @include text($text-l-btn, $text-medium, $text-c4-light, $lh-l-btn);
+            @media only screen and (max-width: 990px) {
+              @include text(
+                $text-base,
+                $text-medium,
+                $text-c4-light,
+                $lh-l-btn
+              );
+            }
+          }
         }
       }
     }
   }
 }
 .related-feature {
-  position: relative;
-  @include wh(1280px, 1044px);
-  background: $bg-2-light;
-  h1 {
-    position: absolute;
-    @include wh(351px, 48px);
-    left: 476px;
-    top: 16px;
-    font-style: $text-style-base;
-    @include text($text-xxl, $text-regular, $text-c1-dark, $lh-xxl);
+  .container {
+    position: relative;
+    height: 1044px;
+    background: $bg-2-light;
+    .related-head {
+      text-align: center;
+      margin-top: 16px;
+      h1 {
+        // position: absolute;
+        // @include wh(351px, 48px);
+        // left: 476px;
+        // top: 16px;
+        height: 48px;
+        font-style: $text-style-base;
+        @include text($text-xxl, $text-regular, $text-c1-dark, $lh-xxl);
+      }
+    }
   }
   .row {
     position: relative;
-    top: 153px;
-    margin-right: 46px;
-    margin-left: 99px;
-    .col-4 {
+    top: 89px;
+    margin-right: 16px;
+    margin-left: 69px;
+    @media only screen and (max-width: 991.98px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .itemList {
       .card-item {
         position: relative;
         @include wh(334px, 369px);
@@ -293,6 +460,11 @@
         bottom: 0;
         background: $bg-gray;
         margin-bottom: 49px;
+        margin-right: 60px;
+        @media only screen and (max-width: 767.98px) {
+          left: 50%;
+          transform: translateX(-50%);
+        }
         .card-top {
           img {
             position: absolute;
@@ -329,20 +501,18 @@
               top: 304px;
               background: $bg-orange;
               border: none;
-            }
-            .buynow {
-              position: absolute;
-              @include wh(109px, 29px);
-              left: 39px;
-              top: 323px;
-              font-style: $text-style-base;
-              @include text(
-                $text-l-btn,
-                $text-exlight,
-                $text-c1-dark,
-                $lh-l-btn
-              );
-              cursor: pointer;
+              padding: 17px 27px 18px 39px;
+              .buynow {
+                @include wh(109px, 29px);
+                font-style: $text-style-base;
+                @include text(
+                  $text-l-btn,
+                  $text-exlight,
+                  $text-c1-dark,
+                  $lh-l-btn
+                );
+                cursor: pointer;
+              }
             }
           }
           .price-btn {
@@ -351,19 +521,17 @@
             left: 174px;
             top: 304px;
             background: $bg-2-gray;
-          }
-          .price {
-            position: absolute;
-            @include wh(54px, 29px);
-            left: 240px;
-            top: 323px;
-            font-style: $text-style-base;
-            @include text(
-              $text-l-btn,
-              $text-semibold,
-              $text-c1-dark,
-              $lh-l-btn
-            );
+            padding: 17px 40px 18px 66px;
+            .price {
+              @include wh(54px, 29px);
+              font-style: $text-style-base;
+              @include text(
+                $text-l-btn,
+                $text-semibold,
+                $text-c1-dark,
+                $lh-l-btn
+              );
+            }
           }
         }
       }
