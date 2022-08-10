@@ -853,7 +853,7 @@ body {
 
 .related-feature .container {
   position: relative;
-  height: 1044px;
+  height: auto;
   background: #fffcfc;
 }
 .related-feature .container .related-head {

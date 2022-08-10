@@ -429,7 +429,7 @@ body {
 
 .product-feature .container {
   position: relative;
-  height: 1044px;
+  height: auto;
   background: #fffcfc;
 }
 .product-feature .container .product-head {
