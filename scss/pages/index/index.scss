@@ -39,6 +39,9 @@
         right: 86px;
         font-style: $text-style-base;
         @extend .txt;
+        &:hover {
+          text-decoration: none;
+        }
       }
       .header-register {
         position: absolute;
@@ -47,6 +50,9 @@
         right: 20px;
         font-style: $text-style-base;
         @extend .txt;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -148,11 +154,26 @@
     background: $bg-light;
     overflow: hidden;
     .carousel-left {
+      position: absolute;
+      @include wh(821px, 392px);
+      left: 86px;
+      top: 5px;
+      @media only screen and (max-width: 991.98px) {
+        @include wh(750px, 750px);
+        top: 17px;
+      }
+      @media only screen and (max-width: 850px) {
+        @include wh(600px, 600px);
+        top: 61px;
+      }
+      @media only screen and (max-width: 767.98px) {
+        @include wh(600px, 600px);
+        top: 50px;
+        left: 50%;
+        transform: translateX(-30%);
+      }
       img {
-        position: absolute;
-        @include wh(821px, 392px);
-        left: 86px;
-        top: 5px;
+        width: 100%;
       }
     }
     .carousel-right {
@@ -163,6 +184,23 @@
         top: 124px;
         font-style: $text-style-base;
         @include text($text-xxl, $text-light, $text-c1-dark, $lh-xxl);
+        @media only screen and (max-width: 991.98px) {
+          @include wh(291px, 51px);
+          @include text($text-xl, $text-light, $text-c1-dark, $lh-xxl);
+          right: -16px;
+        }
+        @media only screen and (max-width: 850px) {
+          @include wh(291px, 51px);
+          @include text($text-l-btn, $text-light, $text-c1-dark, $lh-xxl);
+          right: -16px;
+        }
+        @media only screen and (max-width: 767.98px) {
+          @include wh(291px, 51px);
+          @include text($text-l-btn, $text-light, $text-c1-dark, $lh-xxl);
+          top: 277px;
+          left: 50%;
+          transform: translateX(-28%);
+        }
       }
       .product-description {
         position: absolute;
@@ -171,17 +209,54 @@
         top: 175px;
         font-style: $text-style-base;
         @include text($text-l, $text-light, $text-c1-dark, $lh-l);
+        @media only screen and (max-width: 991.98px) {
+          @include wh(291px, 51px);
+          @include text($text-l, $text-light, $text-c1-dark, $lh-xxl);
+          right: -16px;
+        }
+        @media only screen and (max-width: 850px) {
+          @include wh(291px, 51px);
+          @include text($text-base, $text-light, $text-c1-dark, $lh-xxl);
+          right: -16px;
+        }
+        @media only screen and (max-width: 767.98px) {
+          @include wh(291px, 51px);
+          @include text($text-base, $text-light, $text-c1-dark, $lh-xxl);
+          top: 314px;
+          left: 50%;
+          transform: translateX(-28%);
+        }
       }
       .carousel-button {
         position: absolute;
-        @include wh(150px, 50px);
+        @include wh(150px, 45px);
         right: 200px;
         top: 225px;
         padding: 13px 35px 13px 34px;
         background: $bg-btn;
+        @media only screen and (max-width: 991.98px) {
+          right: 154px;
+          padding: 10px 12px 10px 19px;
+          width: 120px;
+        }
+        @media only screen and (max-width: 850px) {
+          right: 174px;
+          padding: 10px 12px 10px 19px;
+          width: 100px;
+        }
+        @media only screen and (max-width: 767.98px) {
+          right: 50%;
+          transform: translateX(18%);
+          top: 351px;
+          padding: 5px 14px 3px 19px;
+          @include wh(100px, 35px);
+        }
         span {
           font-style: $text-style-base;
           @include text($text-l, $text-light, $text-c1-light, $lh-l);
+          @media only screen and (max-width: 850px) {
+            @include text($text-base, $text-light, $text-c1-light, $lh-l);
+          }
         }
       }
     }

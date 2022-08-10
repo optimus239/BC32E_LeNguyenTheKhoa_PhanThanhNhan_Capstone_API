@@ -28,27 +28,30 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-all">
-          <div class="header-logo"></div>
-          <div class="header-cart">
-            <div class="cart-img"></div>
-            <div class="cart-num">(1)</div>
-          </div>
-          <div class="header-login">Login</div>
-          <div class="header-register">Register</div>
-          <!-- <div class="frame"></div> -->
+        <div class="header-logo">
+          <img src="./img/image 3.png" alt="" />
         </div>
+        <div class="header-content">
+          <img src="./img/image 8.png" alt="" />
+          <div class="hcart-num">(1)</div>
+          <a href="#" class="header-login">Login</a>
+          <a href="./register.html" class="header-register">Register</a>
+        </div>
+
+        <!-- <div class="frame"></div> -->
       </div>
     </header>
     <section class="menu">
-      <ul class="mb-0">
-        <li class="active">Home</li>
-        <li>Men</li>
-        <li>Woman</li>
-        <li>Kid</li>
-        <li>Sport</li>
-      </ul>
-      <div class="line"></div>
+      <div class="container">
+        <ul class="mb-0">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Woman</a></li>
+          <li><a href="#">Kid</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+        <div class="line"></div>
+      </div>
     </section>
     <section class="detail">
       <div class="container">
@@ -58,7 +61,7 @@
             <div class="detail-name"></div>
             <div class="detail-content"></div>
             <div class="detail-available">Available size</div>
-            <div class="detail-size"></div>
+            <div class="detail-size row"></div>
             <div class="detail-price"></div>
             <div class="detail-num">
               <span class="num">1</span>
@@ -71,15 +74,18 @@
                 <span>-</span>
               </div>
             </div>
-            <button class="detail-cart"></button>
-            <span>Add to cart</span>
+            <button class="detail-cart">
+              <span>Add to cart</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
     <section class="related-feature">
       <div class="container">
-        <h1>-Related Feature -</h1>
+        <div class="related-head">
+          <h1>-Related Feature -</h1>
+        </div>
         <div class="row flex-wrap" id="product"></div>
       </div>
       <img src="" alt="" />
@@ -108,7 +114,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./models/Product.js"></script>
+    <!-- <script src="./models/Product.js"></script> -->
     <script src="./controllers/detail.js"></script>
   </body>
 </html>

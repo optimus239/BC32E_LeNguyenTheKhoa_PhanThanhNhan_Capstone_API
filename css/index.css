@@ -65,6 +65,9 @@ body {
   right: 86px;
   font-style: normal;
 }
+.header .container .header-content .header-login:hover {
+  text-decoration: none;
+}
 .header .container .header-content .header-register {
   position: absolute;
   width: 90px;
@@ -72,6 +75,9 @@ body {
   top: 15px;
   right: 20px;
   font-style: normal;
+}
+.header .container .header-content .header-register:hover {
+  text-decoration: none;
 }
 
 .menu .container {
@@ -186,12 +192,38 @@ body {
   background: #ffffff;
   overflow: hidden;
 }
-.carousel .container .carousel-left img {
+.carousel .container .carousel-left {
   position: absolute;
   width: 821px;
   height: 392px;
   left: 86px;
   top: 5px;
+}
+@media only screen and (max-width: 991.98px) {
+  .carousel .container .carousel-left {
+    width: 750px;
+    height: 750px;
+    top: 17px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .carousel .container .carousel-left {
+    width: 600px;
+    height: 600px;
+    top: 61px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .carousel .container .carousel-left {
+    width: 600px;
+    height: 600px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-30%);
+  }
+}
+.carousel .container .carousel-left img {
+  width: 100%;
 }
 .carousel .container .carousel-right .product-name {
   position: absolute;
@@ -205,6 +237,41 @@ body {
   color: #000000;
   line-height: 48px;
 }
+@media only screen and (max-width: 991.98px) {
+  .carousel .container .carousel-right .product-name {
+    width: 291px;
+    height: 51px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 48px;
+    right: -16px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .carousel .container .carousel-right .product-name {
+    width: 291px;
+    height: 51px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 48px;
+    right: -16px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .carousel .container .carousel-right .product-name {
+    width: 291px;
+    height: 51px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 48px;
+    top: 277px;
+    left: 50%;
+    transform: translateX(-28%);
+  }
+}
 .carousel .container .carousel-right .product-description {
   position: absolute;
   width: 291px;
@@ -217,14 +284,73 @@ body {
   color: #000000;
   line-height: 24px;
 }
+@media only screen and (max-width: 991.98px) {
+  .carousel .container .carousel-right .product-description {
+    width: 291px;
+    height: 51px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 48px;
+    right: -16px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .carousel .container .carousel-right .product-description {
+    width: 291px;
+    height: 51px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 48px;
+    right: -16px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .carousel .container .carousel-right .product-description {
+    width: 291px;
+    height: 51px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 48px;
+    top: 314px;
+    left: 50%;
+    transform: translateX(-28%);
+  }
+}
 .carousel .container .carousel-right .carousel-button {
   position: absolute;
   width: 150px;
-  height: 50px;
+  height: 45px;
   right: 200px;
   top: 225px;
   padding: 13px 35px 13px 34px;
   background: #f8b653;
+}
+@media only screen and (max-width: 991.98px) {
+  .carousel .container .carousel-right .carousel-button {
+    right: 154px;
+    padding: 10px 12px 10px 19px;
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .carousel .container .carousel-right .carousel-button {
+    right: 174px;
+    padding: 10px 12px 10px 19px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .carousel .container .carousel-right .carousel-button {
+    right: 50%;
+    transform: translateX(18%);
+    top: 351px;
+    padding: 5px 14px 3px 19px;
+    width: 100px;
+    height: 35px;
+  }
 }
 .carousel .container .carousel-right .carousel-button span {
   font-style: normal;
@@ -232,6 +358,14 @@ body {
   font-weight: 300;
   color: #ffffff;
   line-height: 24px;
+}
+@media only screen and (max-width: 850px) {
+  .carousel .container .carousel-right .carousel-button span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 24px;
+  }
 }
 .carousel .container .polygon .polygon-left {
   position: absolute;
