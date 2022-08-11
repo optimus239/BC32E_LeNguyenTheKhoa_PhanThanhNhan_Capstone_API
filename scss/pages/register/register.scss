@@ -1,2 +1,90 @@
 @import "../../base/components/base";
 @import "../../themes/variable";
+@import "../../themes/header-footer";
+
+.registerContent {
+  background-color: $text-c3-light;
+  .container {
+    @media screen and (max-width: 992px) {
+      padding: 0 65px;
+    }
+    .titleRegister {
+      text-align: center;
+      margin-bottom: 62px;
+      h1 {
+        @include text($text-xxl, $text-regular, $text-c1-dark, $lh-xxl);
+      }
+    }
+    .alert {
+      display: none;
+    }
+    .mainRegister {
+      .row {
+        .column {
+          .errorSpan {
+            margin-bottom: 10px;
+          }
+          span {
+            @include text($text-l, $text-regular, $text-error, $lh-l);
+            display: none;
+          }
+          .form-group {
+            display: flex;
+            width: 90%;
+            margin-bottom: 27px;
+            border-bottom: 5px solid $bg-primary-register;
+            @media screen and (max-width: 992px) {
+              width: 100%;
+            }
+            input {
+              border: none;
+              padding: 0;
+              border-radius: 0%;
+
+              &::placeholder {
+                @include text($text-xl, $text-regular, $text-c1-dark, $lh-xl);
+                @media screen and (max-width: 768px) {
+                  @include text(
+                    $text-l-btn,
+                    $text-regular,
+                    $text-c1-dark,
+                    $lh-xl
+                  );
+                }
+              }
+            }
+          }
+          .gender {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: none;
+
+            @include text($text-xl, $text-regular, $text-c1-dark, $lh-xl);
+            @media screen and (max-width: 768px) {
+              @include text($text-l-btn, $text-regular, $text-c1-dark, $lh-xl);
+            }
+            .radioGender {
+              accent-color: $bg-primary-register;
+              height: 50px;
+              width: 65.42px;
+              margin-left: 40px;
+            }
+          }
+
+          .btn-submit {
+            margin-top: 58px;
+            width: 291px;
+            height: 50px;
+            background-color: $bg-primary-register;
+            border: none;
+            @include text($text-xl, $text-regular, $text-c3-light, $lh-xl);
+            &:hover {
+              background-color: #bf18e5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

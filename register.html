@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/register.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./img/image 3.png" alt="" /></a>
+      </div>
+      <div class="header-content">
+        <ul class="list-content">
+          <li>
+            <a class="cart" href="#"
+              ><img src="./img/image 8.png" alt="" />(1)</a
+            >
+          </li>
+          <li><a href="#">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="menu-bars">
+      <ul class="menu">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kid</a></li>
+        <li><a href="#">Sport</a></li>
+      </ul>
+    </section>
+    <section class="registerContent">
+      <div class="container">
+        <div class="titleRegister">
+          <h1>Register</h1>
+        </div>
+        <div class="alert alert-success alert-dismissible" id="alert">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close"
+            >&times;</a
+          >
+          <p id="notification"></p>
+        </div>
+
+        <div class="mainRegister">
+          <div class="row">
+            <div class="col-xl-6 col-12 column">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="email"
+                  placeholder="email"
+                />
+                <span>(*)</span>
+              </div>
+              <span class="errorSpan" id="errEmail">abc</span>
+              <div class="form-group">
+                <input
+                  id="passWord"
+                  class="form-control"
+                  type="password"
+                  placeholder="password"
+                />
+                <span>(*)</span>
+              </div>
+              <span class="errorSpan" id="errPassword">abc</span>
+              <div class="form-group">
+                <input
+                  id="pwConfirm"
+                  class="form-control"
+                  type="password"
+                  placeholder="password confirm"
+                />
+                <span>(*)</span>
+              </div>
+              <span class="errorSpan" id="errPwConfirm">abc</span>
+            </div>
+            <div class="col-xl-6 col-12 column">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="name"
+                  placeholder="name"
+                />
+                <span>(*)</span>
+              </div>
+              <span class="errorSpan" id="errName">abc</span>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="phone"
+                  placeholder="phone"
+                />
+                <span>(*)</span>
+              </div>
+              <span class="errorSpan" id="errPhone">abc</span>
+              <div class="form-group gender">
+                <nav>Gender</nav>
+
+                <input
+                  class="form-control radioGender"
+                  type="radio"
+                  name="gender"
+                  value="true"
+                  checked
+                />
+                <label for="male">Male</label>
+
+                <input
+                  class="form-control radioGender"
+                  type="radio"
+                  name="gender"
+                  value="false"
+                />
+                <label for="female">Female</label>
+              </div>
+              <button id="btnSubmit" class="btn-submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="above-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-12 column1">
+              <h3>GET HELP</h3>
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">NIKEiD</a></li>
+                <li><a href="#">Nike+</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12 column1">
+              <h3>ORDERS</h3>
+              <ul>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Shipping and delivery</a></li>
+                <li><a href="#">Returns</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12">
+              <h3>REGISTER</h3>
+              <p>
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+                <br />
+                <span id="more"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime, voluptates.</span
+                >
+              </p>
+              <button id="btnMore">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="below-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-12 column1">
+              <h3>EMAIL SIGN UP</h3>
+              <ul>
+                <li>
+                  <p>
+                    Be the first to know about new products and special offers
+                  </p>
+                </li>
+                <li><a href="#">Shopping</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12 column1">
+              <h3>GIFT CARD</h3>
+              <ul>
+                <li><p>Give the gift that always fits</p></li>
+                <li><a href="#">View card</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12">
+              <h3>STORE NEAR YOU</h3>
+              <ul>
+                <li>
+                  <p>Locate a Nike retail store or authorized retailer</p>
+                </li>
+                <li><a href="#">Search</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AXIOS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- lib -->
+    <script src="./util/validation.js"></script>
+    <!-- Models -->
+    <script src="./models/Register.js"></script>
+
+    <script src="./controllers/register.js"></script>
+  </body>
+</html>

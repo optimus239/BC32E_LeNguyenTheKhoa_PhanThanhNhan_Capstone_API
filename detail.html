@@ -26,32 +26,30 @@
     <link rel="stylesheet" href="./css/detail.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-logo">
-          <img src="./img/image 3.png" alt="" />
-        </div>
-        <div class="header-content">
-          <img src="./img/image 8.png" alt="" />
-          <div class="hcart-num">(1)</div>
-          <a href="#" class="header-login">Login</a>
-          <a href="./register.html" class="header-register">Register</a>
-        </div>
-
-        <!-- <div class="frame"></div> -->
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./img/image 3.png" alt="" /></a>
+      </div>
+      <div class="header-content">
+        <ul class="list-content">
+          <li>
+            <a class="cart" href="#"
+              ><img src="./img/image 8.png" alt="" />(1)</a
+            >
+          </li>
+          <li><a href="#">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+        </ul>
       </div>
     </header>
-    <section class="menu">
-      <div class="container">
-        <ul class="mb-0">
-          <li class="active"><a href="./index.html">Home</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Woman</a></li>
-          <li><a href="#">Kid</a></li>
-          <li><a href="#">Sport</a></li>
-        </ul>
-        <div class="line"></div>
-      </div>
+    <section class="menu-bars">
+      <ul class="menu">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kid</a></li>
+        <li><a href="#">Sport</a></li>
+      </ul>
     </section>
     <section class="detail">
       <div class="container">
@@ -91,6 +89,78 @@
       <img src="" alt="" />
     </section>
 
+    <!-- footer -->
+    <footer>
+      <div class="above-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-12 column1">
+              <h3>GET HELP</h3>
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">NIKEiD</a></li>
+                <li><a href="#">Nike+</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12 column1">
+              <h3>ORDERS</h3>
+              <ul>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Shipping and delivery</a></li>
+                <li><a href="#">Returns</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12">
+              <h3>REGISTER</h3>
+              <p>
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+                <br />
+                <span id="more"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime, voluptates.</span
+                >
+              </p>
+              <button id="btnMore">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="below-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-12 column1">
+              <h3>EMAIL SIGN UP</h3>
+              <ul>
+                <li>
+                  <p>
+                    Be the first to know about new products and special offers
+                  </p>
+                </li>
+                <li><a href="#">Shopping</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12 column1">
+              <h3>GIFT CARD</h3>
+              <ul>
+                <li><p>Give the gift that always fits</p></li>
+                <li><a href="#">View card</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-12">
+              <h3>STORE NEAR YOU</h3>
+              <ul>
+                <li>
+                  <p>Locate a Nike retail store or authorized retailer</p>
+                </li>
+                <li><a href="#">Search</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
