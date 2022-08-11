@@ -370,6 +370,11 @@ footer .below-footer a {
   background: #ffffff;
   overflow: hidden;
 }
+@media only screen and (max-width: 1280px) {
+  .detail .container {
+    max-width: 1280px;
+  }
+}
 @media only screen and (max-width: 767.98px) {
   .detail .container {
     height: 600px;
@@ -1033,6 +1038,11 @@ footer .below-footer a {
   position: relative;
   height: auto;
   background: #fffcfc;
+}
+@media only screen and (max-width: 1280px) {
+  .related-feature .container {
+    max-width: 1280px;
+  }
 }
 .related-feature .container .related-head {
   text-align: center;

@@ -8,6 +8,9 @@
     height: 530px;
     background: $bg-light;
     overflow: hidden;
+    @media only screen and (max-width: 1280px) {
+      max-width: 1280px;
+    }
     .carousel-left {
       position: absolute;
       @include wh(821px, 392px);
@@ -173,6 +176,9 @@
     position: relative;
     height: auto;
     background: $bg-2-light;
+    @media only screen and (max-width: 1280px) {
+      max-width: 1280px;
+    }
     .product-head {
       text-align: center;
       h1 {
