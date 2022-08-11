@@ -103,11 +103,14 @@
           width: 100px;
         }
         @media only screen and (max-width: 767.98px) {
-          right: 50%;
+          right: 45%;
           transform: translateX(18%);
           top: 351px;
           padding: 5px 14px 3px 19px;
           @include wh(100px, 35px);
+        }
+        @media only screen and (max-width: 460px) {
+          right: 43%;
         }
         span {
           font-style: $text-style-base;
@@ -125,6 +128,9 @@
         height: 66.13px;
         left: 18px;
         top: 175px;
+        @media only screen and (max-width: 460px) {
+          top: 269px;
+        }
       }
       .polygon-right {
         position: absolute;
@@ -133,6 +139,9 @@
         right: 12.86px;
         top: 175px;
         z-index: 2;
+        @media only screen and (max-width: 460px) {
+          top: 269px;
+        }
       }
     }
     .ellipse {
@@ -251,6 +260,9 @@
                 background: $bg-orange;
                 border: none;
                 padding: 17px 27px 18px 39px;
+                &:focus {
+                  outline: none;
+                }
                 .buynow {
                   @include wh(109px, 29px);
                   font-style: $text-style-base;

@@ -1131,6 +1131,9 @@ footer .below-footer a {
   border: none;
   padding: 17px 27px 18px 39px;
 }
+.related-feature .row .itemList .card-item .card-bottom .card-btn .card-buy:focus {
+  outline: none;
+}
 .related-feature .row .itemList .card-item .card-bottom .card-btn .card-buy .buynow {
   width: 109px;
   height: 29px;

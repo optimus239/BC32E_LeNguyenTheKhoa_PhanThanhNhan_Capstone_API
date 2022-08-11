@@ -682,6 +682,9 @@
               background: $bg-orange;
               border: none;
               padding: 17px 27px 18px 39px;
+              &:focus {
+                outline: none;
+              }
               .buynow {
                 @include wh(109px, 29px);
                 font-style: $text-style-base;

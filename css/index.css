@@ -365,12 +365,17 @@ footer .below-footer a {
 }
 @media only screen and (max-width: 767.98px) {
   .carousel .container .carousel-right .carousel-button {
-    right: 50%;
+    right: 45%;
     transform: translateX(18%);
     top: 351px;
     padding: 5px 14px 3px 19px;
     width: 100px;
     height: 35px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .carousel .container .carousel-right .carousel-button {
+    right: 43%;
   }
 }
 .carousel .container .carousel-right .carousel-button span {
@@ -395,6 +400,11 @@ footer .below-footer a {
   left: 18px;
   top: 175px;
 }
+@media only screen and (max-width: 460px) {
+  .carousel .container .polygon .polygon-left {
+    top: 269px;
+  }
+}
 .carousel .container .polygon .polygon-right {
   position: absolute;
   width: 45.71px;
@@ -402,6 +412,11 @@ footer .below-footer a {
   right: 12.86px;
   top: 175px;
   z-index: 2;
+}
+@media only screen and (max-width: 460px) {
+  .carousel .container .polygon .polygon-right {
+    top: 269px;
+  }
 }
 .carousel .container .ellipse img:nth-child(1) {
   position: absolute;
@@ -542,6 +557,9 @@ footer .below-footer a {
   background: #e1b067;
   border: none;
   padding: 17px 27px 18px 39px;
+}
+.product-feature .container .row .itemList .card-item .card-bottom .card-btn .card-buy:focus {
+  outline: none;
 }
 .product-feature .container .row .itemList .card-item .card-bottom .card-btn .card-buy .buynow {
   width: 109px;
