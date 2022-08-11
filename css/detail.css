@@ -9,12 +9,6 @@ body {
   font-weight: 300;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0;
-  padding: 0 15px;
-}
-
 .txt, .header .container .header-content .header-register, .header .container .header-content .header-login {
   font-size: 16px;
   font-weight: 300;
@@ -22,6 +16,190 @@ body {
   line-height: 19px;
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-weight: 300;
+}
+
+header {
+  padding: 10px 24px;
+  background-color: #000000;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+header .logo img {
+  width: 116px;
+  height: 32px;
+}
+header .header-content {
+  padding: 0 5px;
+}
+header .header-content .list-content {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header .header-content .list-content li {
+  margin-left: 10px;
+}
+header .header-content .list-content li .cart {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 36px;
+}
+header .header-content .list-content li .cart img {
+  width: 31px;
+  height: 31px;
+}
+@media screen and (max-width: 576px) {
+  header .header-content .list-content li .cart img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .header-content .list-content li .cart {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 36px;
+  }
+}
+header .header-content .list-content li a {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #f7f7f7;
+  line-height: 19px;
+}
+header .header-content .list-content li a:hover {
+  text-decoration: none;
+}
+
+.menu-bars .menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 0;
+}
+.menu-bars .menu .active {
+  border-bottom: 1px solid #000000;
+}
+.menu-bars .menu li {
+  height: 50px;
+  width: 5%;
+  margin-left: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+.menu-bars .menu li:hover {
+  border-bottom: 1px solid #000000;
+}
+@media screen and (max-width: 768px) {
+  .menu-bars .menu li {
+    width: auto;
+  }
+}
+.menu-bars .menu li a {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 24px;
+}
+.menu-bars .menu li a:hover {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 58px;
+}
+footer a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 19px;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  margin-bottom: 5px;
+}
+footer ul li p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 19px;
+}
+@media screen and (max-width: 992px) {
+  footer .container {
+    padding: 0 65px;
+  }
+}
+footer .container .column1 {
+  border-right: 2px solid #e2e2e2;
+}
+@media screen and (max-width: 992px) {
+  footer .container .column1 {
+    border-right: none;
+    border-bottom: 2px solid #e2e2e2;
+    margin-bottom: 20px;
+  }
+}
+footer h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 576px) {
+  footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
+footer .above-footer {
+  padding: 35px 0;
+  background-color: #fafafa;
+}
+footer .above-footer #btnMore {
+  color: #d46661;
+  border: none;
+  background-color: #fafafa;
+}
+footer .above-footer #btnMore:focus {
+  outline: none;
+}
+footer .above-footer #more {
+  display: none;
+}
+footer .below-footer {
+  padding: 35px 0;
+  background-color: #ececec;
+}
+footer .below-footer a {
+  color: #d46661;
 }
 
 .header .container {
@@ -191,6 +369,11 @@ body {
   height: 530px;
   background: #ffffff;
   overflow: hidden;
+}
+@media only screen and (max-width: 1280px) {
+  .detail .container {
+    max-width: 1280px;
+  }
 }
 @media only screen and (max-width: 767.98px) {
   .detail .container {
@@ -856,6 +1039,11 @@ body {
   height: auto;
   background: #fffcfc;
 }
+@media only screen and (max-width: 1280px) {
+  .related-feature .container {
+    max-width: 1280px;
+  }
+}
 .related-feature .container .related-head {
   text-align: center;
   margin-top: 16px;
@@ -942,6 +1130,9 @@ body {
   background: #e1b067;
   border: none;
   padding: 17px 27px 18px 39px;
+}
+.related-feature .row .itemList .card-item .card-bottom .card-btn .card-buy:focus {
+  outline: none;
 }
 .related-feature .row .itemList .card-item .card-bottom .card-btn .card-buy .buynow {
   width: 109px;
